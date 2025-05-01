@@ -1,0 +1,26 @@
+/* 🌐 Google Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 8px;
+    /* عرض السكروول بار */
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+    /* لون خلفية المسار */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #64ffda;
+    /* لون السكروول */
+    border-radius: 10px;
+    border: 2px solid #0a192f;
+    /* يضيف حافة بين السكروول والمسار */
+}
+
+/* 🦊 Firefox */
+* {
+    scrollbar-width: thin;
+    /* سمك السكروول */
+    scrollbar-color: #64ffda #0a192f;
+    /* اللون: السكروول ثم الخلفية */
+}

@@ -43,7 +43,7 @@ const ExperienceSection = () => {
               <div className="md:pl-12">
                 <div className="md:hidden absolute left-0 top-0 w-3 h-3 rounded-full bg-accent -translate-x-1.5"></div>
                 <ul className="text-slate space-y-3 list-disc pl-5">
-                  <li>Built responsive web applications using React.js and modern JavaScript (ES6+)</li>
+                  <li>Built responsive web applications using React.js&nbsp;&nbsp;&nbsp; and modern JavaScript (ES6+)</li>
                   <li>Integrated RESTful APIs to create dynamic user experiences</li>
                   <li>Collaborated with designers to implement visually appealing interfaces</li>
                   <li>Optimized front-end performance and accessibility</li>

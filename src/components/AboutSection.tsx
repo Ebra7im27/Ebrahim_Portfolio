@@ -25,7 +25,7 @@ const AboutSection = () => {
     { name: 'CSS3', color: 'bg-blue-500' },
     { name: 'JavaScript', color: 'bg-yellow-500' },
     { name: 'React.js', color: 'bg-cyan-500' },
-    { name: 'Redux Toolkit', color: 'bg-purple-500' },
+    // { name: 'Redux Toolkit', color: 'bg-purple-500' },
     { name: 'Bootstrap', color: 'bg-indigo-500' },
     { name: 'Framer Motion', color: 'bg-pink-500' },
     { name: 'Git & GitHub', color: 'bg-gray-500' },
