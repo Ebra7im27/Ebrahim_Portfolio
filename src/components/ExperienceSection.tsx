@@ -3,17 +3,17 @@ import React, { useEffect, useState } from 'react';
 
 const ExperienceSection = () => {
   const [visible, setVisible] = useState(false);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setVisible(true);
       }
     }, { threshold: 0.1 });
-    
+
     const section = document.querySelector('#experience');
     if (section) observer.observe(section);
-    
+
     return () => {
       if (section) observer.unobserve(section);
     };
@@ -26,18 +26,39 @@ const ExperienceSection = () => {
           <h2 className="section-title">02. Experience</h2>
           <h3 className="text-3xl font-bold mb-8">Where I've Worked</h3>
         </div>
-        
+
         <div className="relative">
           {/* Timeline line */}
           <div className="absolute left-0 md:left-1/2 h-full w-0.5 bg-slate-dark transform md:-translate-x-1/2"></div>
-          
+
+          {/* Da3em */}
+          <div className={`relative mb-12 md:mb-24 ${visible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
+            <div className="md:grid md:grid-cols-2 gap-8 items-center">
+              <div className="md:text-right mb-8 md:mb-0 md:pr-12">
+                <div className="hidden md:block absolute right-0 top-0 w-3 h-3 rounded-full bg-accent transform translate-x-1.5"></div>
+                <p className="font-mono text-accent text-sm">MAY 2025 - PRESENT</p>
+                <h4 className="text-2xl font-bold my-2">Front-End Developer</h4>
+                <p className="text-white text-lg">Da3em</p>
+              </div>
+              <div className="md:pl-12">
+                <div className="md:hidden absolute left-0 top-0 w-3 h-3 rounded-full bg-accent -translate-x-1.5"></div>
+                <ul className="text-slate space-y-3 list-disc pl-5">
+                  <li>Joined the front-end team in a junior role within a professional and collaborative environment</li>
+                  <li>Gained experience working with HTML5, CSS3, JavaScript (ES6+), and React.js</li>
+                  <li>Received technical guidance and hands-on learning from senior team members</li>
+                  <li>Familiarized with team workflows, Git version control, and best practices in responsive UI development</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* 4th-Pyramid */}
           <div className={`relative mb-12 md:mb-24 ${visible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
             <div className="md:grid md:grid-cols-2 gap-8 items-center">
               <div className="md:text-right mb-8 md:mb-0 md:pr-12">
                 <div className="hidden md:block absolute right-0 top-0 w-3 h-3 rounded-full bg-accent transform translate-x-1.5"></div>
-                <p className="font-mono text-accent text-sm">MARCH 2025 - PRESENT</p>
-                <h4 className="text-2xl font-bold my-2">Junior Front-End Developer</h4>
+                <p className="font-mono text-accent text-sm">DECEMBER 2024 - MAY 2025</p>
+                <h4 className="text-2xl font-bold my-2">Front-End Developer</h4>
                 <p className="text-white text-lg">4th-Pyramid</p>
               </div>
               <div className="md:pl-12">
@@ -52,7 +73,7 @@ const ExperienceSection = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Nexus Agency */}
           <div className={`relative ${visible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.4s' }}>
             <div className="md:grid md:grid-cols-2 gap-8 items-center">

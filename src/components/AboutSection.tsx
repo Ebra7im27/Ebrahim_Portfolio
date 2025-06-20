@@ -4,33 +4,34 @@ import SkillBadge from './SkillBadge';
 
 const AboutSection = () => {
   const [visible, setVisible] = useState(false);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setVisible(true);
       }
     }, { threshold: 0.1 });
-    
+
     const section = document.querySelector('#about');
     if (section) observer.observe(section);
-    
+
     return () => {
       if (section) observer.unobserve(section);
     };
   }, []);
-  
+
   const skills = [
     { name: 'HTML5', color: 'bg-orange-500' },
     { name: 'CSS3', color: 'bg-blue-500' },
     { name: 'JavaScript', color: 'bg-yellow-500' },
+    { name: 'Problem Solving', color: 'bg-red-500' },
+    { name: 'OOP', color: 'bg-green-500' },
     { name: 'React.js', color: 'bg-cyan-500' },
-    // { name: 'Redux Toolkit', color: 'bg-purple-500' },
+    { name: 'Next.js', color: 'bg-gray-800' },
     { name: 'Bootstrap', color: 'bg-indigo-500' },
+    { name: 'Tailwind CSS', color: 'bg-sky-400' },
     { name: 'Framer Motion', color: 'bg-pink-500' },
     { name: 'Git & GitHub', color: 'bg-gray-500' },
-    { name: 'OOP', color: 'bg-green-500' },
-    { name: 'Problem Solving', color: 'bg-red-500' },
     { name: 'RESTful APIs', color: 'bg-teal-500' },
     { name: 'Responsive Design', color: 'bg-blue-400' },
   ];
@@ -44,18 +45,13 @@ const AboutSection = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
               <p className="text-slate mb-4">
-                Hello! I'm Ebrahim, a Front-End Developer passionate about building exceptional web experiences. 
-                I enjoy creating efficient and user-friendly interfaces that bring designs to life with clean 
+                Hello! I'm Ebrahim, a Front-End Developer passionate about building exceptional web experiences.
+                I enjoy creating efficient and user-friendly interfaces that bring designs to life with clean
                 code, animations, and optimized performance.
               </p>
               <p className="text-slate mb-4">
-                I'm currently pursuing a B.Sc. in Computer Science from the Higher Institute of Engineering Technology, 
-                Kafr El-Sheikh. I've been working as a Junior Front-End Developer at 4th-Pyramid since March 2025, 
-                where I focus on building responsive web applications and integrating APIs.
-              </p>
-              <p className="text-slate mb-4">
-                I also work as a Freelance Front-End Developer at Nexus Agency, specializing in React and 
-                JavaScript to build scalable web applications with great user experiences.
+                I'm currently pursuing a B.Sc. in Computer Science from the Higher Institute of Engineering Technology,
+                Kafr El-Sheikh.
               </p>
               <p className="text-slate">
                 Here are a few technologies I've been working with recently:
@@ -73,21 +69,21 @@ const AboutSection = () => {
               <div>
                 <p className="text-slate-light font-medium">Front-End Developer Training</p>
                 <p className="text-slate">SEFAcademy</p>
-                <p className="text-slate-dark text-sm">2024 - 2025</p>
+                <p className="text-slate-dark text-sm">Jan, 2024 - Jul, 2024</p>
               </div>
             </div>
           </div>
         </div>
-        
+
         <div className={`${visible ? 'animate-fade-in-up' : 'opacity-0'}`} style={{ animationDelay: '0.2s' }}>
           <h3 className="text-2xl font-bold mb-8">My Skills</h3>
           <div className="flex flex-wrap gap-4">
             {skills.map((skill, index) => (
-              <SkillBadge 
-                key={index} 
-                name={skill.name} 
+              <SkillBadge
+                key={index}
+                name={skill.name}
                 color={skill.color}
-                delay={0.1 * index} 
+                delay={0.1 * index}
               />
             ))}
           </div>

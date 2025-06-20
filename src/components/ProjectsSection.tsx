@@ -58,7 +58,7 @@ const ProjectsSection = () => {
       id: 5,
       title: 'Proj-Portfolio',
       description: 'A multi-page portfolio website built with React Router for seamless navigation between project showcases.',
-      tags: ['HTML5', 'CSS3', 'React '],
+      tags: ['HTML5', 'CSS3', 'React.js '],
       link: 'https://proj-portfolio-sigma.vercel.app/',
       category: 'portfolio',
     },
@@ -66,7 +66,7 @@ const ProjectsSection = () => {
       id: 6,
       title: 'ToDo List',
       description: 'A task manager application built with React, featuring drag-and-drop organization and filter functionality.',
-      tags: ['HTML5', 'CSS3', 'React', 'JavaScript'],
+      tags: ['HTML5', 'CSS3', 'React.js', 'JavaScript'],
       link: 'https://to-do-list-web-two.vercel.app/',
       category: 'app',
     },
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
       id: 7,
       title: 'E-commerce Website',
       description: 'A full-featured e-commerce platform with Redux for state management, user authentication, and order processing.',
-      tags: ['HTML5', 'CSS3', 'React', 'JavaScript', 'Redux', 'API'],
+      tags: ['HTML5', 'CSS3', 'React.js', 'JavaScript', 'Redux', 'API'],
       link: 'https://e-commerce-rouge-sigma.vercel.app/',
       category: 'ecommerce',
     },
@@ -82,7 +82,7 @@ const ProjectsSection = () => {
       id: 8,
       title: 'Demo University Website',
       description: 'A university system user interface with course catalog, student portal, and administrative dashboard.',
-      tags: ['HTML5', 'CSS3', 'JavaScript', 'React'],
+      tags: ['HTML5', 'CSS3', 'JavaScript', 'React.js'],
       link: 'https://demo-project-lilac.vercel.app/login',
       category: 'web',
     },
@@ -90,10 +90,19 @@ const ProjectsSection = () => {
       id: 9,
       title: 'Weather App',
       description: 'A real-time weather application with geolocation and forecast data visualization using external weather API.',
-      tags: ['HTML5', 'CSS3', 'React', 'JavaScript', 'API'],
+      tags: ['HTML5', 'CSS3', 'React.js', 'JavaScript', 'API'],
       link: 'https://weather-app-opal-two-64.vercel.app/',
       category: 'app',
     },
+    {
+      id: 10,
+      title: 'Cold Room Bussma',
+      description: 'A modern industrial website for a cold room solutions company, featuring a clean layout and service-focused interface built with React.',
+      tags: ['Next.js', 'JavaScript', 'Tailwind CSS', 'API'],
+      link: 'https://cold-room-bussma-front.vercel.app/',
+      category: 'web',
+    }
+
   ];
 
   const filteredProjects = filter === 'all'
