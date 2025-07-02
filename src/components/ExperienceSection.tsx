@@ -57,7 +57,7 @@ const ExperienceSection = () => {
             <div className="md:grid md:grid-cols-2 gap-8 items-center">
               <div className="md:text-right mb-8 md:mb-0 md:pr-12">
                 <div className="hidden md:block absolute right-0 top-0 w-3 h-3 rounded-full bg-accent transform translate-x-1.5"></div>
-                <p className="font-mono text-accent text-sm">DECEMBER 2024 - MAY 2025</p>
+                <p className="font-mono text-accent text-sm">FEB 2024 - MAY 2025</p>
                 <h4 className="text-2xl font-bold my-2">Front-End Developer</h4>
                 <p className="text-white text-lg">4th-Pyramid</p>
               </div>

@@ -6,13 +6,13 @@ import LogoPer from '../assets/LogoPer.png';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
       setScrolled(offset > 50);
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -33,7 +33,7 @@ const Header = () => {
             <img src={LogoPer} alt="Logo Personal" width={175} />
           </span>
         </a>
-        
+
         {/* Desktop Navigation */}
         <nav className="hidden md:block">
           <ul className="flex space-x-8">
@@ -45,10 +45,10 @@ const Header = () => {
               </li>
             ))}
             <li>
-              <a 
-                href="https://drive.google.com/file/d/1SK9C1C7-TsLGSaz4t-OBbzfIjJiJZXir/view" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://drive.google.com/file/d/1z4XnCHwxZlUlAxXtkjrRkcr6jSAw-lkg/view"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary"
               >
                 Resume
@@ -56,9 +56,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        
+
         {/* Mobile Navigation Toggle */}
-        <button 
+        <button
           className="md:hidden text-slate hover:text-accent"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
@@ -66,15 +66,14 @@ const Header = () => {
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
-      
+
       {/* Mobile Navigation Drawer */}
-      <div 
-        className={`fixed top-0 right-0 h-screen w-3/4 bg-navy-light shadow-lg transform transition-transform duration-300 ease-in-out md:hidden z-50 ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+      <div
+        className={`fixed top-0 right-0 h-screen w-3/4 bg-navy-light shadow-lg transform transition-transform duration-300 ease-in-out md:hidden z-50 ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="flex justify-end p-6">
-          <button 
+          <button
             onClick={() => setIsMenuOpen(false)}
             aria-label="Close menu"
             className="text-slate hover:text-accent"
@@ -85,8 +84,8 @@ const Header = () => {
         <ul className="flex flex-col items-center space-y-8 mt-16">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a 
-                href={link.href} 
+              <a
+                href={link.href}
                 className="nav-link text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -95,10 +94,10 @@ const Header = () => {
             </li>
           ))}
           <li className="mt-8">
-            <a 
-              href="/resume.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -107,10 +106,10 @@ const Header = () => {
           </li>
         </ul>
       </div>
-      
+
       {/* Overlay */}
       {isMenuOpen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black bg-opacity-50 md:hidden z-40"
           onClick={() => setIsMenuOpen(false)}
         />
