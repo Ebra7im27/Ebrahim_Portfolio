@@ -95,7 +95,7 @@ const Header = () => {
           ))}
           <li className="mt-8">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1z4XnCHwxZlUlAxXtkjrRkcr6jSAw-lkg/view"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
