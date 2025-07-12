@@ -101,8 +101,15 @@ const ProjectsSection = () => {
       tags: ['Next.js', 'JavaScript', 'Tailwind CSS', 'API'],
       link: 'https://cold-room-bussma-front.vercel.app/',
       category: 'web',
-    }
-
+    },
+    {
+      id: 11,
+      title: 'Al-Bahaa Website',
+      description: 'A modern multi-language website for Al-Bahaa, featuring responsive design and dynamic content built with Next.js.',
+      tags: ['Next.js', 'React', 'Tailwind CSS', 'Multi-language', 'API'],
+      link: 'https://al-bahaa.vercel.app/en',
+      category: 'web',
+    },
   ];
 
   const filteredProjects = filter === 'all'
