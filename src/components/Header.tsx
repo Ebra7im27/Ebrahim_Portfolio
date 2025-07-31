@@ -46,7 +46,7 @@ const Header = () => {
             ))}
             <li>
               <a
-                href="https://drive.google.com/file/d/10ANdk8jC8jMv-x_HT58ehhWxL-xU2Rx8/view"
+                href="https://drive.google.com/file/d/1ioQku34oJHIC-HUoVKoXnmXvTSobWsDe/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
@@ -95,7 +95,7 @@ const Header = () => {
           ))}
           <li className="mt-8">
             <a
-              href="https://drive.google.com/file/d/10ANdk8jC8jMv-x_HT58ehhWxL-xU2Rx8/view"
+              href="https://drive.google.com/file/d/1ioQku34oJHIC-HUoVKoXnmXvTSobWsDe/view"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
